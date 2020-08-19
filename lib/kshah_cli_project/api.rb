@@ -5,8 +5,8 @@ require 'json'
 
 class API
   
-      def get_response_body   
-        URL = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick"
+      def get_response_body  
+       # URL = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick"
         uri = URI.parse(URL)
         response = Net::HTTP.get_response(uri)
         lipstick = JSON.parse(response) 
