@@ -1,10 +1,10 @@
 
 class Lipstick
   
-  attr_accessor :tag_list, :name, :product_link
+  attr_accessor :id, :brand, :name, :product_link, :tag_list
     @@all = []
   
-    def initialize(tag_list)
+    def initialize
       
       @tag_list = tag_list
       @name = name
