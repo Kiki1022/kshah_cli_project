@@ -18,11 +18,7 @@ class API
           lip.product_link = attribute["product_link"]
           lip.tag_list = attribute["tag_list"]
         end
-          
-        
-        
-        
-        end
+       end
 
 end
 
