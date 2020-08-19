@@ -17,7 +17,6 @@ class API
           lip.name = attribute["name"]
           lip.product_link = attribute["product_link"]
           lip.tag_list = attribute["tag_list"]
-          lip.rating = attribute["rating"]
         end
        end
 
