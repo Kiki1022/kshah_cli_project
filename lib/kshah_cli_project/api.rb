@@ -4,24 +4,25 @@ require 'open-uri'
 require 'json'
 
 class API
-
-    attr_accessor :url
-    
-
-    def initialize(url)
-        @url = url
-    end
-
-    def get_response_body
+  
+      def get_response_body   
+        URL = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick"
         uri = URI.parse(URL)
         response = Net::HTTP.get_response(uri)
-        response.body
-    end
-
-    def parse_json
-       JSON.parse(get_response_body)
-    end
- 
+        lipstick = JSON.parse(response) 
+        lipstick.each do |attribute|
+          lip = Lipstick.new 
+          lip.id = attribute["id"]
+          lip.brand = attribute["brand"]
+          lip.name = attribute["name"]
+          lip.product_link = attribute["product_link"]
+          lip.tag_list = attribute["tag_list"]
+        end
+          
+        
+        
+        
+        end
 
 end
 
