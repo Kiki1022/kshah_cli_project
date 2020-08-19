@@ -1,6 +1,6 @@
 class Lipstick
   
-  attr_accessor :id, :brand, :name, :product_link, :tag_list, :rating
+  attr_accessor :id, :brand, :name, :product_link, :tag_list
     @@all = []
   
     def initialize
