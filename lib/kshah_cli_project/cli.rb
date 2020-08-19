@@ -10,7 +10,7 @@ class KshahCliProject::Cli
   end
   
   def menu
-    sleep 2
+    sleep 1
     puts "Please choose an option below for me to reveal what I see in your future:"
     sleep 1
     puts "1.Vegan"
