@@ -3,7 +3,7 @@ require 'net/http'
 require 'open-uri'
 require 'json'
 
-class GetRequester
+class API
 
     attr_accessor :url
     
