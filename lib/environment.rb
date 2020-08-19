@@ -5,6 +5,7 @@ require_relative "../lib/kshah_cli_project/lipstick"
 require 'json'
 require 'net/http'
 require 'pry'
+require 'open uri'
 
 module KshahCliProject
   class Error < StandardError; end
