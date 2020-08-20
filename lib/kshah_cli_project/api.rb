@@ -5,12 +5,13 @@ require 'json'
 
 class API
   
-  URL = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick"
+  #URL = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick"
       
-      def get_response_body #add input?  
-        #URL = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick"
+      def get_response_body
+        url = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick"
         uri = URI.parse(url)
         response = Net::HTTP.get_response(uri)
+        binding.pry
         lipstick = JSON.parse(response.body) 
         lipstick.each do |attribute|
           lip = Lipstick.new 
@@ -24,3 +25,4 @@ class API
 
 end
  
+ API.new.get_response_body
