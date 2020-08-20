@@ -10,9 +10,7 @@ class Lipstick
     def self.all 
       @@all
     end
-  def save
-    @@all << self
-  end
+  
   
   # def self.create(name)
   #   song = new(name) 
