@@ -11,7 +11,7 @@ class KshahCliProject::Cli
   def menu
     sleep 1
     input = ''
-    while input != 'exit' #does this need end?
+    while input != 'exit' 
     puts "For vegan selection, enter 'vegan'."
     #list_vegan
     sleep 1
@@ -34,11 +34,7 @@ class KshahCliProject::Cli
  end 
   
  
-  # if enter 1 return "vegan", brand, name and product links in hash or as text?
-    
-  # if enter "Just surprise me" randomly select a brand, name, product link.
   
-  #keep looping until exit#
   
   
 
@@ -52,15 +48,9 @@ class KshahCliProject::Cli
   # Thank you for visiting The Lipstick Reader, please choose an option below for me to reveal what I see in your lipstick future:
     
     
-    #Welcome to the Liptick Reader. Pleaes choose one option below. 
-    # 1.Vegan
-    # 2.Cruelty-free
-    # 3.Peanut free product
-    # 4.Gluten free
-    # 5.Organic
-    # 6. Just Surprise Me
+ 
   
-  # if choose 1-5 return id that includes (brand, name, link)
+  # if choose 1-5 return id that includes (brand, name, link) in text format
   #   if choose "just surprise me" randomly select (brand,name,link)
   
   
