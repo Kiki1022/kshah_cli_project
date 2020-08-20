@@ -9,11 +9,12 @@ class KshahCliProject::Cli
   end
   
   def menu
+    API.get_response_body
     sleep 1
     input = ''
     while input != 'exit' 
     puts "For vegan selection, enter 'vegan'."
-    #list_vegan
+   
     sleep 1
     puts "For all natural selection, enter 'natural'."
     #list_natural
@@ -24,12 +25,17 @@ class KshahCliProject::Cli
     puts "For gluten free selection, enter 'gluten free'."
     #list_gluten_free
     sleep 1
-    puts "If you have no preferences, enter 'surprise me'." 
+    puts "If you have no preferences, enter 'Surprise me'." 
     #list_surprise
     sleep 1
     puts "To leave, type 'exit'."
     input = gets.strip
-   end 
+    if input == "Surprise me" 
+    Lipstick.all.sample.print_info
+  else
+    Lipstick.find_by_name(input).each{|l| l.print_info}
+  end
+    end 
   end
  end 
   

@@ -7,7 +7,8 @@ class API
   
   #URL = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick"
       
-      def get_response_body
+      def self.get_response_body
+        
         url = "http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lipstick&product_type=lipstick"
         uri = URI.parse(url)
         response = Net::HTTP.get_response(uri)
@@ -20,6 +21,7 @@ class API
           lip.product_link = attribute["product_link"]
           lip.tag_list = attribute["tag_list"]
         end
+        
        end
 
 end
