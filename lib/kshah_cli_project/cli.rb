@@ -11,7 +11,7 @@ class KshahCliProject::Cli
   
   def menu
     sleep 1
-    puts "Please choose an option below for me to reveal what I see in your future:"
+    puts "Enter a number that matches your option below for me to reveal what I see in your future:"
     sleep 1
     puts "1.Vegan"
     sleep 1
@@ -31,10 +31,13 @@ class KshahCliProject::Cli
   end
   
   
+  # #change number to integer? get to integer?
+  # match number to option
+  # if enter 1 return "vegan", brand, name and product links in hash or as text?
+    
+  # if enter "Just surprise me" randomly select a brand, name, product link.
   
-  
-  
-  
+  #keep looping until exit#
   
   
 end
