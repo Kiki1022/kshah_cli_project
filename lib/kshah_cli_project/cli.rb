@@ -4,13 +4,13 @@ class KshahCliProject::Cli
   
   def greeting
     sleep 1
-  puts "*****The Lipstick Reader Welcomes You*****"
-  menu
-  
+    puts "*****The Lipstick Reader Welcomes You*****"
+    menu
   end
   
   def menu
     sleep 1
+    #while input != 'exit' does this need end?
     puts "Enter a number that matches your option below for me to reveal what I see in your future:"
     sleep 1
     puts "1.Vegan"
@@ -26,10 +26,24 @@ class KshahCliProject::Cli
     puts "6.Just Surprise Me!"
     
     input = gets.strip
-    
+      
+    # case input
+    #     when '1'
+    #       list_vegan
+    #     when '2'
+    #       list_cruelty_free
+    #     when '3'
+    #       list_peanut_free
+    #     when '4'
+    #       list_gluten_free
+    #     when '5'
+    #       list_organic
+    #     when '6'
+    #       list_surprise
+    #     end
     
   end
-  
+ end 
   
   # #change number to integer? get to integer?
   # match number to option
@@ -40,7 +54,7 @@ class KshahCliProject::Cli
   #keep looping until exit#
   
   
-end
+
  
   # lipstick Reader
   # famous old women
