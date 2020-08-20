@@ -10,43 +10,43 @@ class KshahCliProject::Cli
   
   def menu
     sleep 1
-    #while input != 'exit' does this need end?
-    puts "Enter a number that matches your option below for me to reveal what I see in your future:"
+    input = ''
+    while input != 'exit' #does this need end?
+    puts "For vegan selection, enter 'vegan'."
+    #list_vegan
     sleep 1
-    puts "1.Vegan"
+    puts "For all natural selection, enter 'natural'."
+    #list_natural
     sleep 1
-    puts "2.Cruelty Free"
+    puts "For peanut free product selection, enter 'peanut free'."
+    #list_peanut_free
     sleep 1
-    puts "3.Peanut Free Product"
+    puts "For gluten free selection, enter 'gluten free'."
+    #list_gluten_free
     sleep 1
-    puts "4.Gluten Free"
+    puts "If you have no preferences, enter 'surprise me'." 
+    #list_surprise
     sleep 1
-    puts "5.Organic"
-    sleep 1
-    puts "6.Just Surprise Me!"
-    
+    puts "To leave, type 'exit'."
     input = gets.strip
       
     # case input
-    #     when '1'
+    #     when 'vegan'
     #       list_vegan
-    #     when '2'
-    #       list_cruelty_free
-    #     when '3'
+    #     when 'natural'
+    #       list_natural
+    #     when 'peanut free'
     #       list_peanut_free
-    #     when '4'
+    #     when 'gluten free'
     #       list_gluten_free
-    #     when '5'
-    #       list_organic
-    #     when '6'
+    #     when 'surprise me'
     #       list_surprise
     #     end
-    
+   end 
   end
  end 
   
-  # #change number to integer? get to integer?
-  # match number to option
+ 
   # if enter 1 return "vegan", brand, name and product links in hash or as text?
     
   # if enter "Just surprise me" randomly select a brand, name, product link.
