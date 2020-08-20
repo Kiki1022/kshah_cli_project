@@ -16,10 +16,12 @@ class Lipstick
     end 
    
    def print_info
+     puts "=="*10
      puts "BRAND: #{@brand}" 
      puts "NAME:  #{@name}" 
      puts "LINK:  #{@product_link}"
      puts "=="*10
+     
    end
   
 end
