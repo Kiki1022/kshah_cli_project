@@ -6,6 +6,8 @@ require 'json'
 require 'net/http'
 require 'pry'
 require 'open-uri'
+require 'bundler'
+Bundler.require
 
 module KshahCliProject
   class Error < StandardError; end

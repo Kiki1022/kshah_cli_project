@@ -29,19 +29,6 @@ class KshahCliProject::Cli
     sleep 1
     puts "To leave, type 'exit'."
     input = gets.strip
-      
-    # case input
-    #     when 'vegan'
-    #       list_vegan
-    #     when 'natural'
-    #       list_natural
-    #     when 'peanut free'
-    #       list_peanut_free
-    #     when 'gluten free'
-    #       list_gluten_free
-    #     when 'surprise me'
-    #       list_surprise
-    #     end
    end 
   end
  end 
