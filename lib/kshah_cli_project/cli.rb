@@ -15,11 +15,11 @@ class KshahCliProject::Cli
     sleep 1
     puts "1.Vegan"
     sleep 1
-    puts "2.Cruelty-free"
+    puts "2.Cruelty Free"
     sleep 1
-    puts "3.Peanut free product"
+    puts "3.Peanut Free Product"
     sleep 1
-    puts "4.Gluten free"
+    puts "4.Gluten Free"
     sleep 1
     puts "5.Organic"
     sleep 1
