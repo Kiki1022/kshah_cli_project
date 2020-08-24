@@ -21,8 +21,10 @@ class KshahCliProject::Cli
     input = gets.strip.split(" ").collect {|x| x.capitalize}.join(" ")
     if input == "Surprise Me" 
       Lipstick.all.sample.print_info
+      elsif input == 'Exit'
+      puts "Thank you have a nice day."
     else
-      Lipstick.find_by_name(input).each{|l| l.print_info}
+      Lipstick.find_by_name(input)
     end
   end 
   end
