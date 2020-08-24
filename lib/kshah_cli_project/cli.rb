@@ -15,6 +15,7 @@ class KshahCliProject::Cli
     puts "*For peanut free product selection, enter 'Peanut Free Product'."
     puts "*For gluten free selection, enter 'Gluten Free'."
     puts "*For organic selection, enter 'Organic'."
+    puts "*For chemical free selection, enter 'Chemical Free'."
     puts "*If you have no preferences, enter 'Surprise Me'." 
     puts "*To leave, type 'Exit'."
     input = gets.strip.split(" ").collect {|x| x.capitalize}.join(" ")
