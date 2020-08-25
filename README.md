@@ -1,6 +1,6 @@
 *****The Lipstick Reader Welcomes You*****
   
-Thank you for trusting me to find the perfect lipsticks for you! I am happy to announce I have updated my selection to honor those with special requests. The special requests include: vegan, natural, peanut free, gluten free, organic, chemical free, and finally a surprise me option if you do not have any preferences. 
+Thank you for trusting me to find the perfect lipsticks for you! I am happy to announce I have updated my selection to honor those with special requests. The special requests include: vegan, natural, peanut free, gluten free, organic, chemical free, and finally a surprise me option if you do not have any preferences.#NEED TO CHANGE THIS 
 
 1. Change directories to kshah_cli_project by entering 'cd kshah_cli_project' in terminal.
 2. Enter 'bundle install' in terminal so magic can happen.
