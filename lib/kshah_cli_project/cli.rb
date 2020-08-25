@@ -6,11 +6,11 @@ class KshahCliProject::Cli
     puts "*****The Lipstick Reader Welcomes You*****".colorize(:light_red)
     sleep 1
     puts "Loading Menu...".colorize(:light_red)
+    KshahCliProject::API.get_response_body
     menu
   end
   
   def menu
-    KshahCliProject::API.get_response_body
     input = ''
     while input != 'Exit' 
     puts "*For vegan selection, enter 'vegan'."
@@ -26,6 +26,12 @@ class KshahCliProject::Cli
         Lipstick.all.sample.print_info
       elsif input == 'Exit'
         puts "*****Thank you for visiting the Lipstick Reader*****".colorize(:light_red)
+        elsif input == 'Search Brands'
+        puts "Here are the brands"
+        Lipstick.get_all_brands.each_with_index {|b,i| puts "#{i+1}. #{b}"}
+        puts "Please enter number of brand"
+        number = gets.chomp.to_i 
+        Lipstick.search_brands(number)
       else
         Lipstick.find_by_name(input)
       end
