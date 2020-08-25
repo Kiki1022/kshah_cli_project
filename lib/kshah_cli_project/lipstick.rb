@@ -13,7 +13,7 @@ class Lipstick
 
     def self.find_by_name(tag) 
       if ["Vegan", "Natural", "Peanut Free Product", "Gluten Free", "Organic", "Chemical Free"].include? tag
-     @@all.select {|l| l.tag_list.include? tag}.each{|l| l.print_info}
+        @@all.select {|l| l.tag_list.include? tag}.each{|l| l.print_info}
       else
         puts "***Please try again***".colorize(:red)
       end
@@ -25,7 +25,5 @@ class Lipstick
      puts "NAME:  #{@name}".colorize(:light_cyan)
      puts "LINK:  #{@product_link}".colorize(:light_blue)
      puts "=="*10
-     
    end
-  
 end
