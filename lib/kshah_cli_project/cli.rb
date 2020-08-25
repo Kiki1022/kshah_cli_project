@@ -17,13 +17,13 @@ class KshahCliProject::Cli
     puts "*For gluten free selection, enter 'gluten free'."
     puts "*For organic selection, enter 'organic'."
     puts "*For chemical free selection, enter 'chemical free'."
-    puts "*If you have no preferences, enter 'surprise me'." 
-    puts "*To leave, type 'exit'."
+    puts "*If you have no preferences, enter 'surprise me'.".colorize(:yellow)
+    puts "~~~To exit, enter 'exit'.~~~".colorize(:blue)
     input = gets.strip.split(" ").collect {|x| x.capitalize}.join(" ")
-    if input == "surprise me" 
+    if input == "Surprise Me" 
       Lipstick.all.sample.print_info
       elsif input == 'Exit'
-      puts "*****Thank you for visiting the Lipstick Reader.*****".colorize(:red)
+      puts "*****Thank you for visiting the Lipstick Reader*****".colorize(:red)
     else
       Lipstick.find_by_name(input)
     end

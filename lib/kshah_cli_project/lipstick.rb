@@ -15,15 +15,15 @@ class Lipstick
       if ["Vegan", "Natural", "Peanut Free Product", "Gluten Free", "Organic", "Chemical Free"].include? tag
      @@all.select {|l| l.tag_list.include? tag}.each{|l| l.print_info}
       else
-        puts "Please try again."
+        puts "***Please try again***".colorize(:red)
       end
     end 
    
    def print_info
      puts "=="*10
-     puts "BRAND: #{@brand}" 
-     puts "NAME:  #{@name}" 
-     puts "LINK:  #{@product_link}"
+     puts "BRAND: #{@brand}".colorize(:red)
+     puts "NAME:  #{@name}".colorize(:yellow)
+     puts "LINK:  #{@product_link}".colorize(:light_blue)
      puts "=="*10
      
    end
