@@ -21,8 +21,8 @@ class Lipstick
    
    def print_info
      puts "=="*10
-     puts "BRAND: #{@brand}".colorize(:red)
-     puts "NAME:  #{@name}".colorize(:yellow)
+     puts "BRAND: #{@brand}".colorize(:light_magenta)
+     puts "NAME:  #{@name}".colorize(:light_cyan)
      puts "LINK:  #{@product_link}".colorize(:light_blue)
      puts "=="*10
      
