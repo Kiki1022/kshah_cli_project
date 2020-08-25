@@ -8,7 +8,7 @@ class KshahCliProject::Cli
   end
   
   def menu
-    API.get_response_body
+    KshahCliProject::API.get_response_body
     input = ''
     while input != 'Exit' 
     puts "*For vegan selection, enter 'vegan'."

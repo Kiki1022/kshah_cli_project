@@ -3,7 +3,7 @@ require 'net/http'
 require 'open-uri'
 require 'json'
 
-class API
+class KshahCliProject::API
   
       def self.get_response_body
         
