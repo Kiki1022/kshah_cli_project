@@ -1,3 +1,12 @@
+Ruby Essentials *
+Basic control flow - how "if" statements work
+Variable scopes - method, instance and class
+Object instantiation - #new (and possibly #initialize)
+The meaning of the "self" keyword
+Method types - class vs. instance methods
+Method return types - knowing what methods return
+Iterating through collections - at least using #each with a block
+This form was created inside of Flatiron School. Report Abuse
 # KshahCliProject
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/kshah_cli_project`. To experiment with that code, run `bin/console` for an interactive prompt.
