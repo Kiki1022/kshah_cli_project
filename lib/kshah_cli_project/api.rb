@@ -13,7 +13,6 @@ class API
         lipstick = JSON.parse(response.body) 
         lipstick.each do |attribute|
           lip = Lipstick.new 
-          lip.id = attribute["id"]
           lip.brand = attribute["brand"]
           lip.name = attribute["name"]
           lip.product_link = attribute["product_link"]
