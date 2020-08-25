@@ -15,7 +15,6 @@ class KshahCliProject::Cli
     while input != 'Exit' 
     puts "*To search by brand, enter 'brand'.".colorize(:light_cyan)
     puts "*To have the Lipstick Reader select one for you, enter 'surprise me'.".colorize(:light_cyan)
-    puts "*For a list of brands, enter 'brand'.".colorize(:light_magenta)
     puts "*For a vegan selection, enter 'vegan'.".colorize(:light_magenta)
     puts "*For an all natural selection, enter 'natural'.".colorize(:light_magenta)
     puts "*For a peanut free product selection, enter 'peanut free product'.".colorize(:light_magenta)
