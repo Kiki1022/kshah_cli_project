@@ -1,52 +1,25 @@
-Ruby Essentials *
-Basic control flow - how "if" statements work
-Variable scopes - method, instance and class
-Object instantiation - #new (and possibly #initialize)
-The meaning of the "self" keyword
-Method types - class vs. instance methods
-Method return types - knowing what methods return
-Iterating through collections - at least using #each with a block
-This form was created inside of Flatiron School. Report Abuse
-# KshahCliProject
+*****The Lipstick Reader Welcomes You*****
+  
+Thank you for trusting me to find the perfect lipsticks for you! I am happy to announce I have updated my selection to honor those with special requests. The special requests include: vegan, natural, peanut free, gluten free, organic, chemical free, and finally a surprise me option if you do not have any preferences. 
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/kshah_cli_project`. To experiment with that code, run `bin/console` for an interactive prompt.
+1. Change directories to kshah_cli_project by entering 'cd kshah_cli_project' in terminal.
+2. Enter 'bundle install' in terminal so magic can happen.
+3. Enter 'ruby bin/kshah_cli_project' 
+    You will see:
+    *For vegan selection, enter 'vegan'.
+    *For all natural selection, enter 'natural'.
+    *For peanut free product selection, enter 'peanut free product'.
+    *For gluten free selection, enter 'gluten free'.
+    *For organic selection, enter 'organic'.
+    *For chemical free selection, enter 'chemical free'.
+    *If you have no preferences, enter 'surprise me'.
+    ~~~To exit, enter 'exit'.~~~
+ 
+4. Choose your selection and I will reveal to you a Brand, Name, and Link to further explore the         collection. Some selections will have more results than others. 
+5. If I do not recognize your selection entered, I will ask you to try again.
+6. You can choose a different selection each time.
+7. Exit program when done. 
 
-TODO: Delete this and the text above, and describe your gem
 
-## Installation
 
-Add this line to your application's Gemfile:
 
-```ruby
-gem 'kshah_cli_project'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install kshah_cli_project
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/'kinnari1022'/kshah_cli_project. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the KshahCliProject project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/'kinnari1022'/kshah_cli_project/blob/master/CODE_OF_CONDUCT.md).
