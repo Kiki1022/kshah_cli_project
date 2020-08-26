@@ -11,11 +11,11 @@ class KshahCliProject::API
     response = Net::HTTP.get_response(uri)
     lipstick = JSON.parse(response.body) 
     lipstick.each do |attribute|
-      lip = Lipstick.new 
-          lip.brand = attribute["brand"]
-          lip.name = attribute["name"]
-          lip.product_link = attribute["product_link"]
-          lip.tag_list = attribute["tag_list"]
+      brand = attribute["brand"]
+      name = attribute["name"]
+      product_link = attribute["product_link"]
+      tag_list = attribute["tag_list"]
+      lip = Lipstick.new(brand, name, product_link, tag_list) 
     end
   end
 end

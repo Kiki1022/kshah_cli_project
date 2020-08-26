@@ -4,7 +4,11 @@ class Lipstick
     @@all = []
     @@tags =  ["Vegan", "Natural", "Peanut Free Product", "Gluten Free", "Organic", "Chemical Free"]
     
-    def initialize
+    def initialize(brand, name, product_link, tag_list)
+      @brand = brand
+      @name = name
+      @product_link = product_link
+      @tag_list = tag_list
       @@all << self 
     end
     
