@@ -29,8 +29,14 @@ class Lipstick
    end
    
    def self.search_brands(number)
-     brand = self.get_all_brands[number-1]
-     @@all.filter {|l| l.brand == brand}.each {|l| l.print_info}
+    if number >= 1 && number <= self.get_all_brands.count
+      brand = self.get_all_brands[number-1]
+      @@all.filter {|l| l.brand == brand}.each {|l| l.print_info}
+    else
+      puts "*Invalid Response*".colorize(:red)
+      puts "*If you would still like to search by brand, enter 'brand'...*".colorize(:red)
+      puts "*Otherwise, choose from an option below.*".colorize(:red)
+    end
    end
 
     def print_info

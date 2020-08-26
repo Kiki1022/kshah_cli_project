@@ -29,7 +29,7 @@ class KshahCliProject::Cli
         puts "*****Thank you for visiting the Lipstick Reader*****".colorize(:light_red)
       elsif input == 'Brand'
         Lipstick.get_all_brands.each_with_index {|b,i| puts "#{i+1}. #{b}"}
-        puts "*Enter the number of the brand for more information:".colorize(:light_cyan)
+        puts "*Please enter the number of the brand for more information:".colorize(:red)
         number = gets.chomp.to_i 
         Lipstick.search_brands(number)
       else
