@@ -1,6 +1,6 @@
 *****The Lipstick Reader Welcomes You*****
-This gem was created to give the User (hopefully a lipstick lover!) a variety of browsing options. There are 122 lipstick objecs in this collection. The first two options are search by 'brand' and a 'surprise me' option that the Lipstick Reader is known for. She can predict the perfect Lisptick line for you! The rest of the options are for users that have specific needs or requests. 
 
+This gem was created to give the User (hopefully a lipstick lover!) a variety of browsing options. There are 122 lipstick objecs in this collection. The first two options are search by 'brand' and a 'surprise me' option that the Lipstick Reader is known for. She can predict the perfect Lisptick line for you! The rest of the options are for users that have specific needs or requests. 
 
 1. Enter 'bundle install' in terminal so magic can happen.
 2. Enter 'ruby bin/kshah_cli_project' 
