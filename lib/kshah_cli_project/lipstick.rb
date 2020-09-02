@@ -20,7 +20,7 @@ class Lipstick
       if @@tags.include? tag
         @@all.select {|l| l.tag_list.include? tag}.each{|l| l.print_info}
       else
-        puts "***Please try again***".colorize(:red)
+        puts "\n ***Please try again***\n".colorize(:red)
       end
     end 
    
@@ -33,9 +33,9 @@ class Lipstick
       brand = self.get_all_brands[number-1]
       @@all.filter {|l| l.brand == brand}.each {|l| l.print_info}
     else
-      puts "*Invalid Response*".colorize(:red)
-      puts "*If you would still like to search by brand, enter 'brand'...*".colorize(:red)
-      puts "*Otherwise, choose from an option below.*".colorize(:red)
+      puts "\n*Invalid Response*".colorize(:red)
+      puts "If you would still like to search by brand, enter 'brand'...".colorize(:red)
+      puts "Otherwise, choose from an option below.\n".colorize(:red)
     end
    end
 
