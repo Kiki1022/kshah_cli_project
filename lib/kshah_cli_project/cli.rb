@@ -1,4 +1,3 @@
-
 class KshahCliProject::Cli
   
   def greeting

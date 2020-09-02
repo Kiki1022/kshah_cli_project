@@ -1,6 +1,7 @@
 class Lipstick
   
   attr_accessor :brand, :name, :product_link, :tag_list
+
     @@all = []
     @@tags =  ["Vegan", "Natural", "Peanut Free Product", "Gluten Free", "Organic", "Chemical Free"]
     
@@ -31,7 +32,7 @@ class Lipstick
    def self.search_brands(number)
     if number >= 1 && number <= self.get_all_brands.count
       brand = self.get_all_brands[number-1]
-      @@all.filter {|l| l.brand == brand}.each {|l| l.print_info}
+      @@all.select {|l| l.brand == brand}.each {|l| l.print_info}
     else
       puts "\n*Invalid Response*".colorize(:red)
       puts "If you would still like to search by brand, enter 'brand'...".colorize(:red)
@@ -41,9 +42,10 @@ class Lipstick
 
     def print_info
      puts "=="*10
-     puts "BRAND: #{@brand}".colorize(:light_magenta)
-     puts "NAME:  #{@name}".colorize(:light_cyan)
-     puts "LINK:  #{@product_link}".colorize(:light_blue)
+     puts "BRAND: #{brand}".colorize(:light_magenta)
+     puts "NAME:  #{name}".colorize(:light_cyan)
+     puts "LINK:  #{product_link}".colorize(:light_blue)
      puts "=="*10
+     puts "\n"
    end
 end
