@@ -30,11 +30,19 @@ class KshahCliProject::Cli
         Lipstick.get_all_brands.each_with_index {|b,i| puts "#{i+1}. #{b}"}
         puts "\n Please enter the number of the brand for more information:".colorize(:red)
         number = gets.chomp.to_i 
-        Lipstick.search_brands(number)
+        Lipstick.search_brands(number).each {|l| self.print_info(l)}
       else
         Lipstick.find_by_name(input)
       end
     end 
+  end
+  def print_info(lipstick)
+    puts "=="*10
+    puts "BRAND: #{lipstick.brand}".colorize(:light_magenta)
+    puts "NAME:  #{lipstick.name}".colorize(:light_cyan)
+    puts "LINK:  #{lipstick.product_link}".colorize(:light_blue)
+    puts "=="*10
+    puts "\n"
   end
 end 
 
